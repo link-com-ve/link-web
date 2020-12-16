@@ -1,0 +1,21 @@
+.cabezera{
+    width: 95%;
+    margin: 0px auto;
+  
+    }
+    @media (min-width: 768px) {
+        .cabezera{
+         display: flex;
+         justify-content: center;
+            
+        }}
+    
+    .App-logo{
+
+        background-image: url("/src/Gallery/5.-Link.web-Logo-Sin-Fondo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 600px;
+        height: 240px;
+            }

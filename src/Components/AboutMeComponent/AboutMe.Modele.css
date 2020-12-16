@@ -1,0 +1,272 @@
+/*UTILIDADES*/
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0px auto;
+    
+  }
+  
+ .marginPading{
+   padding: 100px 50px;
+ }
+  
+
+  /**ICONOS NOSOTROS**/
+     
+    .iconos-nosotros {
+      width: 100%;
+      height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+  
+  .icono {
+    text-align: center;
+
+margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.836);
+    color: black;
+    border-radius: 10%;
+  }
+  .icono:last-child{
+    margin-bottom: 0px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .icono {
+flex-basis: calc(50% - 2rem);
+margin-bottom: 50px;
+
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .icono:last-child {
+flex-basis: calc(95%);
+
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .icono:last-child {
+      flex-basis: calc(33.33% - 2rem);
+      
+    }
+  }
+  
+
+  @media screen and (min-width: 1200px) {
+    .icono {
+     margin: 0px;
+     flex-basis: calc(33.33% - 2rem);
+    }
+  }
+
+
+  .icono h3 {
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+      font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  /*.icono img{
+      width: 100px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+   background-color: none;
+  }*/
+  .icono p{
+      font-size: 25px;
+      font-weight: bold;
+      width: 95%;
+      margin: 0px auto;
+      padding-bottom: 20px;
+
+  }
+
+  /**SECCION DE PARALLAX**/
+
+
+  .parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position:50% 50%;
+    background-attachment: fixed;
+  -webkit-filter: brightness(0.7);
+    filter: brightness(0.7);
+    z-index: -4;
+}
+@media (min-width: 768px) {
+  .parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size:75% 100% ;
+    background-position:150% 100% ;
+    background-attachment: fixed;
+  -webkit-filter: brightness(0.7);
+    filter: brightness(0.7);
+    z-index: -4;
+  }
+}
+div.imagen-parallax {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  
+}
+@media (min-width: 768px) {
+  div.imagen-parallax {
+    position: relative;
+    width: 50%;
+    height: 850px;
+  }
+}
+
+div.imagen-parallax::before {
+    background-image: url("/src/Gallery/astronauta.svg");
+    content: '';
+   
+}
+
+.dflex{
+  display: block;
+
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+.dflex {
+  display: flex;
+  
+  justify-content: space-between;
+  }
+}
+
+.titulos-estilos{
+  
+  padding-top: 60px;
+    font-size: 70px;
+  font-weight: 300;
+  text-align: center;
+   margin-bottom: 20px;
+   color: rgb(20, 15, 15);
+   font-weight: bold;
+   text-shadow: 0px 0px 5px rgb(14, 9, 9);
+
+}
+
+@media (min-width: 768px) {
+  .titulos-estilos {
+    
+    padding-top: 90px;
+    font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+   margin-bottom: 50px;
+   color: rgb(20, 15, 15);
+   font-weight: bold;
+   text-shadow: 0px 0px 5px rgb(14, 9, 9);
+ 
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .titulos-estilos {
+      
+      padding-top: 150px;
+      font-size: 70px;
+      }
+    }
+
+
+
+
+.titulos-estilos-2{
+  
+  padding-top: 30px;
+    font-size: 70px;
+  font-weight: 300;
+  text-align: center;
+   margin-bottom: 50px;
+   color: white;
+   font-weight: bold;
+   text-shadow: 0px 0px 10px white;
+
+}
+
+.Contenedor-parallax {
+   max-width: 700px;
+   text-align: justify;
+   width: 85%;
+   margin: 0px auto;
+   font-size: 30px;
+   font-weight: bold;
+   text-shadow: 0px 0px 2px rgb(8, 3, 3);
+   color: rgb(8, 5, 5);
+  
+
+}
+@media (min-width: 768px) {
+  .Contenedor-parallax {
+   
+    max-width: 700px;
+    text-align: justify;
+    margin: 0px auto;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px rgb(8, 3, 3);
+    color: rgb(8, 5, 5);
+  }
+}
+@media (min-width: 1200px) {
+  .Contenedor-parallax {
+   
+    max-width: 700px;
+    text-align: justify;
+    margin: 0px auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px rgb(8, 3, 3);
+    color: rgb(8, 5, 5);
+  }
+}
+
+
+
+
+
+div.colorFondo {
+  position: relative;
+width: 100%;
+  height: 650px;
+  background-color: white;
+
+}
+
+@media (min-width: 768px) {
+  div.colorFondo {
+    
+    position: relative;
+width: 50%;
+  height: 850px;
+  background-color: white;
+    }
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  
+
+.services-h3{
+padding: 30px 0px;
+  text-align: center;
+   color: rgba(5, 5, 5, 0.986);
+   font-weight: bold;
+   text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  
+}
+.services-h3 h3{
+    font-size: 70px;
+    
+}
+@media (min-width: 768px) {
+    .services-h3 h3{
+        font-size: 100px;
+        
+    }
+  }
+
+/** Tabla de Precios **/
+ul.lista-precios{
+    width: 95%;
+    height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-flow: wrap;
+      list-style: none;
+}
+
+.tabla-precio {
+  
+    background-color: rgba(10, 10, 10, 0.973);
+    border-radius: 50px;
+    padding: 30px 0px;
+    text-align: center;
+    transition: all 1s ease;
+    margin-bottom: 50px;
+
+}
+
+.tabla-precio:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(255, 253, 253);
+}
+
+
+@media screen and (min-width: 768px) {
+    .tabla-precio{
+flex-basis: calc(50% - 2rem);
+
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .tabla-precio{
+     flex-basis: calc(33.33% - 2rem);
+    }
+  }
+
+
+.tabla-precio h3 {
+    padding: 0px 50px;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   text-transform: uppercase;
+   text-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+.tabla-precio p{
+    font-size: 25px;
+    color: white;
+    padding: 0px 50px;
+    text-align: justify;
+    margin-top: 20px;
+
+  }
+
+  @media screen and (min-width: 768px) {
+    .tabla-precio h3{
+font-size: 25px;
+
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .tabla-precio h3{
+        font-size: 30px;
+
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .tabla-precio p{
+font-size: 20px;
+
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .tabla-precio p{
+  font-size: 23px;
+    }
+  }
+
+
+  .ajustar{
+   margin-top: 60px !important;
+  }
+

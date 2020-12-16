@@ -1,0 +1,39 @@
+#fronted{
+  margin: 0px auto;
+   text-align: center;
+padding-bottom: 50px;
+width: 95%;
+}
+
+@media (min-width: 1200px) {
+  #fronted{
+  margin: 0px auto;
+   text-align: left;
+    
+  }}
+
+#fronted h2{
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px rgba(252, 252, 252, 0.74);
+}
+@media (min-width: 768px) {
+  #fronted h2{
+   
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(252, 252, 252, 0.74); 
+  }}
+
+#fronted h2 span{
+  font-weight: lighter;
+}
+#fronted p{
+  font-size: 30px;
+  color: white;
+ 
+  text-shadow: 0px 0px 5px rgba(252, 252, 252, 0.74);
+
+}

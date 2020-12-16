@@ -1,0 +1,127 @@
+
+
+.nav{
+  width: 100%;
+  line-height: 0;
+background-color:rgba(255, 255, 255, 0.993);
+
+}
+
+.navLink{
+    width: 100%;
+    list-style: none;
+    display: flex; 
+    justify-content: space-evenly;
+   
+}
+/*CLASES DE BOOTSTRAP*/
+
+/*BOTOM */
+.navbar-light .navbar-toggler{
+    border-color: black !important;
+   
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+font-size: 30px;
+transition: all 400ms;
+color: black !important;  
+margin: 0px auto;
+text-align: center;
+width: 50%;
+}
+@media (min-width: 991px) {
+    .navbar-light .navbar-nav .nav-link{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+  }
+.navbar-light .navbar-nav .nav-link:hover{
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    font-size: 40px;
+    
+}
+@media (min-width: 991px) {
+    .nav-link:hover {
+      font-size: 30px !important;  
+    }
+  }
+
+/**/
+
+
+/*.nav ul li a{
+    
+    color: white;
+    text-decoration: none;
+   font-size: 30px;
+   font-weight: bolder;
+   text-shadow: 0px 0px 5px rgb(255, 255, 255);
+   list-style: none;
+ 
+  
+} */  
+
+/*.nav ul li:hover{
+    background-color: gray;
+    box-shadow: 0px 0px 4px black inset;
+   
+}*/
+
+
+
+/*.menu-desplegable{
+display: none;
+  background-color: rgba(152, 157, 158, 0.966);
+    position: absolute;
+    width:300px;
+    z-index: -1;
+    margin-top:20px;
+margin-left: 75px;
+    border-radius: 0px 0px 60px 60px;
+}*/
+
+/*.nav ul li:hover .menu-desplegable{
+      display: block;
+      
+     
+}*/
+
+/*.nav ul li .menu-desplegable div{
+    border-bottom:2px solid rgb(2, 1, 1) ;
+    padding: 5px;
+
+    }
+    */
+    /*.nav ul li .menu-desplegable div:last-child{
+        border-bottom:none ;
+        }*/
+
+    /*.nav ul li .menu-desplegable div:hover {
+        background-color:rgb(22, 18, 18);
+        border-radius:0px 50px;
+    transition: all 1000ms;
+        }*/
+
+        /*.nav ul li .menu-desplegable div:hover:last-child {
+            background-color:rgb(22, 18, 18);
+            border-radius:0px 0px 1000px 1000px;
+       
+            }*/
+            
+            /*.nav ul li .menu-desplegable div a{
+color: black;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+            }*/
+
+        /*.nav ul li .menu-desplegable div:hover a{
+            color: white;
+            text-shadow: 0px 0px 10px white;
+          text-transform: uppercase;
+          font-weight: bold;
+    
+                }*/
+        
+
