@@ -11,7 +11,7 @@ const Aside = () => {
 
     return (
         <>
-            <IconContext.Provider value={{ style: { verticalAlign: 'text-top' }, size: "50px", className: 'react-icons' }}>
+            <IconContext.Provider value={{ style: { verticalAlign: 'text-top' }, size: "5rem", className: 'react-icons' }}>
           
             <aside id="aside">
 

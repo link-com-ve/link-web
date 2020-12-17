@@ -1,3 +1,11 @@
+@import-normalize;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*reset de rem*/
+}
+
 body {
   margin: 0;
   font-family: 'Roboto Slab', serif !important;
@@ -5,4 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
  
 }
+
+
 

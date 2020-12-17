@@ -8,7 +8,7 @@ import "./AboutMe.Modele.css";
 const AboutMe = () => {
     return (
         <div >
-            <IconContext.Provider value={{ style: { verticalAlign: 'bottom', margin: "20px 0px" }, size: "120px" }}>
+            <IconContext.Provider value={{ style: { verticalAlign: 'bottom', margin: "2rem 0px" }, size: "12rem" }}>
 
                 <div className="dflex ">
 

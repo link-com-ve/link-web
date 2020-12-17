@@ -153,7 +153,7 @@ const Footer = () => {
 
                     <div className="degradado-footer">
 
-                        <IconContext.Provider value={{ style: { verticalAlign: 'bottom' }, size: "50px", className: 'react-icons' }}>
+                        <IconContext.Provider value={{ style: { verticalAlign: 'bottom' }, size: "5rem", className: 'react-icons' }}>
 
                             <li >
                                 <a target="_blank" href="https://www.instagram.com/hectorimm/" >  <FaInstagram /> </a>
