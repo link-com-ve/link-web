@@ -150,7 +150,7 @@ function App() {
 
           <Header />
 
-          <div className="container-fluid content ">
+          <div className="container-fluid content  ">
           <Row >
 
             <Col xl={8}>

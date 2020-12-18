@@ -25,12 +25,12 @@ background-color:rgba(255, 255, 255, 0.993);
 .navbar-light .navbar-nav .nav-link{
     padding-top: 3vh;
     padding-bottom: 3vh;
-font-size: 3rem;
-transition: all 400ms;
+font-size: 2rem;
+transition: all 100ms;
 color: black !important;  
 margin: 0px auto;
 text-align: center;
-width: 50%;
+width: 100%;
 }
 @media (min-width: 991px) {
     .navbar-light .navbar-nav .nav-link{
@@ -40,12 +40,12 @@ width: 50%;
   }
 .navbar-light .navbar-nav .nav-link:hover{
     text-shadow: 0px 0px 20px rgb(0, 0, 0);
-    font-size: 4rem;
+    font-size: 2.5rem;
     
 }
 @media (min-width: 991px) {
     .nav-link:hover {
-      font-size: 3rem !important;  
+      font-size: 2.5rem !important;  
     }
   }
 

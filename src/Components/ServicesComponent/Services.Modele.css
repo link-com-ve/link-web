@@ -6,27 +6,26 @@
   
 
 .services-h3{
-padding: 3rem 0px;
+padding: 2rem 0px;
   text-align: center;
    color: rgba(5, 5, 5, 0.986);
-   font-weight: bold;
-   text-shadow: 0px 0px 10px rgb(0, 0, 0);
   
 }
 .services-h3 h3{
-    font-size: 7rem;
-    
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 @media (min-width: 768px) {
     .services-h3 h3{
-        font-size: 10rem;
+        font-size: 5rem;
         
     }
   }
 
 /** Tabla de Precios **/
 ul.lista-precios{
-    width: 95%;
+    width: 90%;
     margin: 0px auto;
     height: auto;
       display: flex;
@@ -41,10 +40,10 @@ ul.lista-precios{
   
     background-color: rgba(10, 10, 10, 0.973);
     border-radius: 50px;
-    padding: 3rem 0px;
+    padding: 2rem 0px;
     text-align: center;
     transition: all 1s ease;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 
 }
 
@@ -69,51 +68,27 @@ flex-basis: calc(50% - 2rem);
 
 
 .tabla-precio h3 {
-    padding: 0px 5rem;
+    padding: 0px 3rem;
    color: rgb(255, 255, 255);
    font-weight: bold;
    text-transform: uppercase;
    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+   font-size: 2rem;
 
 }
 .tabla-precio p{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: white;
-    padding: 0px 5rem;
+    padding: 0px 3rem;
     text-align: justify;
     margin-top: 2rem;
 
   }
 
-  @media screen and (min-width: 768px) {
-    .tabla-precio h3{
-font-size: 2.5rem;
-
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .tabla-precio h3{
-        font-size: 3rem;
-
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .tabla-precio p{
-font-size: 2rem;
-
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .tabla-precio p{
-  font-size: 2.3rem;
-    }
-  }
+ 
 
 
-  .ajustar{
+  /*.ajustar{
    margin-top: 6rem !important;
-  }
+  }*/
 

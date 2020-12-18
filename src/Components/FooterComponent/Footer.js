@@ -68,7 +68,7 @@ const Footer = () => {
 
                 <div className="form-content ">
 
-                    <div >
+                    <div className="form-content-display" >
 
                         <div id="estilos-Footer"  >
 
@@ -81,7 +81,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div >
+                    <div className="form-content-display" >
 
                         {error ? <p className="alerta-error">Todos los campos son obligatorios </p>
                             : null}
@@ -153,7 +153,7 @@ const Footer = () => {
 
                     <div className="degradado-footer">
 
-                        <IconContext.Provider value={{ style: { verticalAlign: 'bottom' }, size: "5rem", className: 'react-icons' }}>
+                        <IconContext.Provider value={{ style: { verticalAlign: 'bottom' }, size: "3rem", className: 'react-icons' }}>
 
                             <li >
                                 <a target="_blank" href="https://www.instagram.com/hectorimm/" >  <FaInstagram /> </a>
