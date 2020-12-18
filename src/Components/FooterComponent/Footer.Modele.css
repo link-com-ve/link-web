@@ -17,14 +17,14 @@ footer {
   
   }
 
-  @media (min-width: 1095px) {
+  @media (min-width: 68.4rem) {
     #estilos-Footer{
       padding: 4rem 2rem;
     
     }}
   
   
-@media (min-width: 1500px) {
+@media (min-width: 94rem) {
   #estilos-Footer{
     margin: 0px auto;
     max-width: 160rem;
@@ -43,7 +43,7 @@ margin-top: 5rem;
 
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 94rem) {
     #estilos-Footer h2{
      
       font-size: 4.5rem;
@@ -61,7 +61,7 @@ margin-top: 5rem;
   text-shadow: 0px 0px 15px rgb(0, 0, 0);
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 94rem) {
     #estilos-Footer div span{
       font-weight: bold;
       font-size: 5rem;
@@ -76,7 +76,7 @@ margin-top: 5rem;
     margin-bottom: 0px;
   }
   
-  @media (min-width: 1500px) {
+  @media (min-width: 94rem) {
     #estilos-Footer p{
       font-size: 2.5rem;
       color: rgb(0, 0, 0);
@@ -105,7 +105,7 @@ margin-top: 5rem;
 .redes-footer{
   padding-top: 1rem;
 }
-  @media (min-width: 1095px) {
+  @media (min-width: 68.4rem) {
     .redes-footer{
       display: flex;
       align-items: center;
@@ -129,14 +129,14 @@ margin-top: 5rem;
    
   }
 
-  @media (min-width: 1095px) {
+  @media (min-width: 68.4rem) {
     .degradado-footer{
      margin: 0px 6%;
      width: 40%;
      
     }}
 
-  @media (min-width: 1500px) {
+  @media (min-width: 94rem) {
     .degradado-footer{
       background: linear-gradient(70deg, rgba(92, 92, 92, 0), rgb(0, 0, 0)); 
   margin: 0px;
@@ -155,7 +155,7 @@ margin: 0px;
 padding: 0px 3rem ;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 94rem) {
     .degradado-footer li a{
       margin-right: 3rem;
       padding: 0px;
@@ -168,14 +168,14 @@ padding: 0px 3rem ;
  
 
   }
-  @media (min-width: 1095px) {
+  @media (min-width: 68.4rem) {
     .form-content{
       display: flex;
       justify-content: space-around;
       
     }}
 
-    @media (min-width: 1095px) {
+    @media (min-width: 68.4rem) {
       .form-content-display{
         flex-basis: calc(50% - 2rem);
       }}
@@ -193,7 +193,7 @@ padding: 0px 3rem ;
           margin: 0px auto;
   }
 
-  @media (min-width: 1095px) {
+  @media (min-width: 68.4rem) {
     .form-logo{
       
  margin-right: 5rem;

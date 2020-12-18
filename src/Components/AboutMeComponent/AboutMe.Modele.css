@@ -34,7 +34,7 @@ margin-bottom: 5rem;
     margin-bottom: 0px;
   }
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 48rem) {
     .icono {
 flex-basis: calc(50% - 2rem);
 margin-bottom: 5rem;
@@ -42,14 +42,14 @@ margin-bottom: 5rem;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 48rem) {
     .icono:last-child {
      
 flex-basis: calc(95%);
 
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 75rem) {
     .icono:last-child {
       flex-basis: calc(33.33% - 2rem);
       
@@ -57,7 +57,7 @@ flex-basis: calc(95%);
   }
   
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 75rem) {
     .icono {
      margin: 0px;
      flex-basis: calc(33.33% - 2rem);
@@ -74,7 +74,7 @@ flex-basis: calc(95%);
     
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 48rem) {
     .icono h3 {
     font-size: 2rem;
     }
@@ -82,7 +82,7 @@ flex-basis: calc(95%);
 
  
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 75rem) {
     .icono h3 {
     font-size: 3rem;
     }
@@ -105,13 +105,13 @@ flex-basis: calc(95%);
 
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 48rem) {
     .icono p {
     font-size: 1.5rem;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 75rem) {
     .icono p {
     font-size: 1.8rem;
     }
@@ -133,7 +133,7 @@ flex-basis: calc(95%);
     filter: brightness(0.7);
     z-index: -4;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .parallax::before {
     width: 100%;
     height: 100%;
@@ -155,7 +155,7 @@ div.imagen-parallax {
   height: 50rem;
   
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   div.imagen-parallax {
     position: relative;
     width: 50%;
@@ -175,7 +175,7 @@ div.imagen-parallax::before {
   justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
 .dflex {
   display: flex;
   
@@ -196,7 +196,7 @@ div.imagen-parallax::before {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .titulos-estilos {
     
     padding-top: 3rem;
@@ -211,7 +211,7 @@ div.imagen-parallax::before {
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 75rem) {
     .titulos-estilos {
       
       padding-top: 5rem;
@@ -247,7 +247,7 @@ div.imagen-parallax::before {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .Contenedor-parallax {
    
     max-width: 70rem;
@@ -259,13 +259,13 @@ div.imagen-parallax::before {
     color: rgb(8, 5, 5);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .Contenedor-parallax {
    
     max-width: 70rem;
     text-align: justify;
     margin: 0px auto;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 0px 0px 2px rgb(8, 3, 3);
     color: rgb(8, 5, 5);
@@ -285,7 +285,7 @@ width: 100%;
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   div.colorFondo {
     
     position: relative;
