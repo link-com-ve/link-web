@@ -38,3 +38,8 @@ width: 90%;
 
 }
 
+@media (min-width: 48rem) {
+  #fronted p{
+    font-size: 2rem;
+  }}
+

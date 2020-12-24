@@ -169,7 +169,7 @@ div.imagen-parallax {
 }
 
 div.imagen-parallax::before {
-    background-image: url("/src/Gallery/II.-Link.web-Logo-Sin-Fondo.png");
+    background-image: url("/src/Gallery/astronauta.jpg");
     content: '';
    
 }
