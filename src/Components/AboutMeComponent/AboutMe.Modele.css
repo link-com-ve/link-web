@@ -9,7 +9,12 @@
  .marginPading{
    padding: 2rem 1rem;
  }
-  
+ @media screen and (min-width: 45rem) {
+  .marginPading{
+padding: 10rem 1rem;
+
+  }
+}
 
   /**ICONOS NOSOTROS**/
      
@@ -34,7 +39,7 @@ margin-bottom: 5rem;
     margin-bottom: 0px;
   }
   
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 45rem) {
     .icono {
 flex-basis: calc(50% - 2rem);
 margin-bottom: 5rem;
@@ -42,14 +47,14 @@ margin-bottom: 5rem;
     }
   }
 
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 45rem) {
     .icono:last-child {
      
 flex-basis: calc(95%);
 
     }
   }
-  @media screen and (min-width: 75rem) {
+  @media screen and (min-width: 65rem) {
     .icono:last-child {
       flex-basis: calc(33.33% - 2rem);
       
@@ -57,7 +62,7 @@ flex-basis: calc(95%);
   }
   
 
-  @media screen and (min-width: 75rem) {
+  @media screen and (min-width: 65rem) {
     .icono {
      margin: 0px;
      flex-basis: calc(33.33% - 2rem);
@@ -74,7 +79,7 @@ flex-basis: calc(95%);
     
   }
 
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 45rem) {
     .icono h3 {
     font-size: 2rem;
     }
@@ -82,7 +87,7 @@ flex-basis: calc(95%);
 
  
 
-  @media screen and (min-width: 75rem) {
+  @media screen and (min-width: 65rem) {
     .icono h3 {
     font-size: 3rem;
     }
@@ -98,20 +103,20 @@ flex-basis: calc(95%);
   }*/
   .icono p{
       font-size: 1.8rem;
-      font-weight: bold;
       width: 95%;
       margin: 0px auto;
-      padding-bottom: 1rem;
+      padding:2rem;
+      text-align: justify;
 
   }
 
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 45rem) {
     .icono p {
     font-size: 1.5rem;
     }
   }
 
-  @media screen and (min-width: 75rem) {
+  @media screen and (min-width: 65rem) {
     .icono p {
     font-size: 1.8rem;
     }
@@ -185,13 +190,13 @@ div.imagen-parallax::before {
 
 .titulos-estilos{
   
-  padding-top: 3rem;
+ 
     font-size: 3.8rem;
   font-weight: 300;
   text-align: center;
    margin-bottom: 2rem;
    color: rgb(20, 15, 15);
-   font-weight: bold;
+   
    text-shadow: 0px 0px 5px rgb(14, 9, 9);
 
 }
@@ -199,13 +204,13 @@ div.imagen-parallax::before {
 @media (min-width: 48rem) {
   .titulos-estilos {
     
-    padding-top: 3rem;
+    
     font-size: 3rem;
   font-weight: 300;
   text-align: center;
    margin-bottom: 2rem;
    color: rgb(20, 15, 15);
-   font-weight: bold;
+   
    text-shadow: 0px 0px 5px rgb(14, 9, 9);
  
     }
@@ -213,8 +218,6 @@ div.imagen-parallax::before {
 
   @media (min-width: 75rem) {
     .titulos-estilos {
-      
-      padding-top: 5rem;
       font-size: 4rem;
       }
     }
@@ -230,7 +233,7 @@ div.imagen-parallax::before {
   text-align: center;
    margin-bottom: 3rem;
    color: white;
-   font-weight: bold;
+  
    text-shadow: 0px 0px 10px white;
 
 }
@@ -241,7 +244,7 @@ div.imagen-parallax::before {
    width: 85%;
    margin: 0px auto;
    font-size: 2rem;
-   font-weight: bold;
+  
    text-shadow: 0px 0px 2px rgb(8, 3, 3);
    color: rgb(8, 5, 5);
 
@@ -254,7 +257,7 @@ div.imagen-parallax::before {
     text-align: justify;
     margin: 0px auto;
     font-size: 2rem;
-    font-weight: bold;
+  
     text-shadow: 0px 0px 2px rgb(8, 3, 3);
     color: rgb(8, 5, 5);
   }
@@ -266,7 +269,7 @@ div.imagen-parallax::before {
     text-align: justify;
     margin: 0px auto;
     font-size: 2.5rem;
-    font-weight: bold;
+    
     text-shadow: 0px 0px 2px rgb(8, 3, 3);
     color: rgb(8, 5, 5);
   }
@@ -281,7 +284,8 @@ div.colorFondo {
 width: 100%;
   height: auto;
   background-color: white;
-  padding-bottom: 2rem;
+  padding: 15rem 0rem;
+
 
 }
 
@@ -290,7 +294,7 @@ width: 100%;
     
     position: relative;
 width: 50%;
-  height: auto;
+  background-size: auto;
   background-color: white;
     }
   }
