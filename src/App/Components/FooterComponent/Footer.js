@@ -1,11 +1,11 @@
 import { React, useState } from 'react'
-import "./Footer.Modele.css"
+import "./Footer.css"
 import { IconContext } from "react-icons"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { v4 as uuidv4 } from "uuid"
 
 const Footer = () => {
-    function handleClick(e) { e.preventDefault(); }
+    // function handleClick(e) { e.preventDefault(); }
 
     //State de Formulario//
     const [formulario, actFormulario] = useState({
@@ -156,11 +156,11 @@ const Footer = () => {
                         <IconContext.Provider value={{ style: { verticalAlign: 'bottom' }, size: "3rem", className: 'react-icons' }}>
 
                             <li >
-                                <a target="_blank" href="https://www.instagram.com/hectorimm/" >  <FaInstagram /> </a>
+                                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/hectorimm/" >  <FaInstagram /> </a>
                             </li>
 
                             <li>
-                                <a target="_blank" href="https://wa.me/584242235507?text=Hola%20necesito%20informacion">  <FaWhatsapp className="wa" /> </a>
+                                <a target="_blank" rel="noreferrer" href="https://wa.me/584242235507?text=Hola%20necesito%20informacion">  <FaWhatsapp className="wa" /> </a>
                             </li>
                         </IconContext.Provider>
                     </div>

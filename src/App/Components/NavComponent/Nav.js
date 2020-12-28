@@ -1,10 +1,12 @@
 
 import React from 'react';
-import "./Nav.Modele.css"
+import "./Nav.css"
 import { Navbar, Nav } from 'react-bootstrap'
+// import { useHistory } from 'react-router-dom'
 
 const Navegacion = ({scrollTo, AboutMeRef, ServicesRef, FooterRef}) => {
-   {/* function handleClick(e) { e.preventDefault(); }*/}
+  //  function handleClick(e) { e.preventDefault(); }
+  //  const history = useHistory()
     return (
         <>
  <Navbar collapseOnSelect expand="lg"   style={{position: 'sticky', top: 0, zIndex: 1, opacity: 0.98}} className="nav">
@@ -14,7 +16,8 @@ const Navegacion = ({scrollTo, AboutMeRef, ServicesRef, FooterRef}) => {
           <Nav.Link  onClick={() => document.location.href="/"}>Home</Nav.Link>
           <Nav.Link  onClick={() => scrollTo(AboutMeRef)}>Sobre Nosotros</Nav.Link>
           <Nav.Link  onClick={() => scrollTo(ServicesRef)}>Servicios</Nav.Link>
-          <Nav.Link  onClick={() => scrollTo(FooterRef)}>Contacto</Nav.Link>
+          <Nav.Link  onClick={() => scrollTo(FooterRef)}>Contacto</Nav.Link> 
+          {/* <Nav.Link  onClick={() => history.push('/contact')}>Contacto</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -47,4 +50,4 @@ const Navegacion = ({scrollTo, AboutMeRef, ServicesRef, FooterRef}) => {
     );
 }
 
-export default Navegacion;
+export default Navegacion

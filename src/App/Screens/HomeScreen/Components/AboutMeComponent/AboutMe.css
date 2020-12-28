@@ -169,7 +169,7 @@ div.imagen-parallax {
 }
 
 div.imagen-parallax::before {
-    background-image: url("/src/Gallery/astronauta.jpg");
+    background-image: url("/src/App/Gallery/astronauta.jpg");
     content: '';
    
 }

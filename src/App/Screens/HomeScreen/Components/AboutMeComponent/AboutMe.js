@@ -4,7 +4,7 @@ import { IconContext, icons } from "react-icons"
 import { FaClock, FaMoneyBill, FaUserLock } from "react-icons/fa"
 
 
-import "./AboutMe.Modele.css";
+import "./AboutMe.css";
 const AboutMe = () => {
     return (
         <div >

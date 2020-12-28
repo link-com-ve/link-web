@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Form.Modele.css"
+import "./Form.css"
 
 const Form = () => {
     function handleClick(e) { e.preventDefault(); }
