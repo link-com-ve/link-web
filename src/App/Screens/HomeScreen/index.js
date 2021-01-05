@@ -9,7 +9,7 @@ import Aside from './Components/AsideComponent/Aside'
 import AboutMe from './Components/AboutMeComponent/AboutMe'
 import Services from './Components/ServicesComponent/Services'
 import Form from "./Components/FormComponent/Form"
-import Footer from "../../Components/FooterComponent/Footer"
+import Footer from "./Components/FooterComponent/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import particleConfig from './Configs/particleConfig'
 
