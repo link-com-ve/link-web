@@ -2,8 +2,8 @@ import { React } from 'react'
 import "./Footer.css"
 import { IconContext } from "react-icons"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
-import { Form, Input, Button, Checkbox, Select } from 'antd'
-
+import { Form, Input, Button, Select } from 'antd'
+import sendEmail from '../../../../Helpers/sendEmail'
 const { Option } = Select;
 
 const Footer = ({
@@ -32,60 +32,65 @@ const Footer = ({
                         </div>
                     </div>
                     <div className="form-content-display" >
-                        <Form id="form-footer">
-                            <Form.Item
-                                value={name}
-                                rules={[{ required: true, message: '¡Debes ingresar tu nombre!' }]}>
+                        <Form id="form-footer" onSubmitCapture={sendEmail}>
+                            <Form.Item name="name" rules={[{ required: true, message: '¡Debes ingresar tu nombre!' }]} className="bottom-footer form-select">
                                 <Input
                                     placeholder="Tu Nombre"
                                     type="text"
+                                    value={name}
+                                    name="name"
+                                    onChange={(e) => {setName(e.target.value)}}
                                 />
                             </Form.Item>
 
-                            <Form.Item
-                                value={email}
-                                rules={[{ required: true, message: '¡Debes ingresar tu email!' }]}
-                            >
+                            <Form.Item name="email" rules={[{ required: true, message: '¡Debes ingresar tu email!' }]} className="bottom-footer form-select">
                                 <Input
                                     placeholder="Tu Email"
                                     type="email"
+                                    value={email}
+                                    name="email"
+                                    onChange={(e) => {setEmail(e.target.value)}}
                                 />
                             </Form.Item>
 
-                            <Form.Item value={phone}
-                                rules={[{ required: true, message: '¡Debes ingresar tu número!' }]}>
+                            <Form.Item name="phone" rules={[{ required: true, message: '¡Debes ingresar tu número!' }]} className="bottom-footer form-select">
                                 <Input
                                     placeholder="Tu Número"
                                     type="tel"
+                                    value={phone}
+                                    name="phone"
+                                    onChange={(e) => {setPhone(e.target.value)}}
                                 />
                             </Form.Item>
 
-                            <Form.Item name="select" rules={[{ required: true, message: '¡Debes ingresar tu presupuesto!' }]} className="bottom-footer form-select">
+                            <Form.Item name="amount" rules={[{ required: true, message: '¡Debes ingresar tu presupuesto!' }]} className="bottom-footer form-select">
                                 <Select
                                     placeholder="Elige tu presupuesto"
                                     allowClear
-                                 
                                     value={amount}
-                                    type="select"
+                                    name="amount"
+                                    
+                                    onChange={(e) => {setAmount(e)}}
                                 >
-                                    <Option value="250$">250$</Option>
-                                    <Option value="500$">500$</Option>
-                                    <Option value="1000$ o más">1000$ o más</Option>
+                                    <Option value="250">250$</Option>
+                                    <Option value="500">500$</Option>
+                                    <Option value="1000">1000$ o más</Option>
                                 </Select>
                             </Form.Item>
 
-                            <Form.Item
-                                name="username"
-                                value={projectDescription}>
+                            <Form.Item name="projectDescription">
                                 <Input.TextArea
                                     placeholder="Cuéntanos de tu proyecto"
+                                    value={projectDescription}
+                                    name="projectDescription"
+                                    onChange={(e) => {setProjectDescription(e.target.value)}}
                                 />
                             </Form.Item>
 
                             <Form.Item>
                                 <Button type="button" htmlType="submit">
-                                    Submit
-                </Button>
+                                    Enviar
+                                </Button>
                             </Form.Item>
 
                         </Form>
@@ -113,101 +118,6 @@ const Footer = ({
                     </div>
 
                 </div>
-
-                {/* <div className="form-content ">
-                    <div className="form-content-display" >
-                        <div id="estilos-Footer"  >
-                            <h2>Construyamos </h2>
-                            <div><span> algo asombroso</span></div>
-                            <div className="footer-divider"></div>
-                            <p>Link.Web@gmail.com</p>
-                            <p><span>Caracas, Venezuela</span></p>
-                        </div>
-                    </div>
-                    <div className="form-content-display" >
-                        <form id="form-footer">
-                            <input className="bottom-footer"
-                                type="text"
-                                name="Nombre"
-                                placeholder="Tu Nombre"
-                                onChange={actualizarState}
-                                value={name}
-                            />
-                            <input className="bottom-footer"
-                                type="email"
-                                name="Email"
-                                placeholder="Tu Email"
-                                onChange={actualizarState}
-                                value={email}
-                            />
-                            <input className="bottom-footer"
-
-                                type="tel"
-                                name="Telefono"
-                                placeholder="Tu Telefono"
-                                onChange={actualizarState}
-                                value={Telefono}
-                            />
-
-                            <select className="bottom-footer "
-                                name="Monto"
-                                type="select"
-                                onChange={actualizarState}
-                                value={Monto}
-                            >
-
-                                <option value="">---Seleccione---</option>
-                                <option value="250$">250$</option>
-                                <option value="500$">500$</option>
-                                <option value="1000$">1000$ o MAS</option>
-                            </ select>
-
-                            <textarea className="bottom-footer"
-                                placeholder="Cuentanos tu Proyecto"
-                                name="Proyecto"
-                                onChange={actualizarState}
-                                value={Proyecto}
-                            ></textarea>
-
-                            <input
-
-                                type="submit"
-                                value="Enviar Mensaje"
-
-                            />
-
-                        </form>
-
-
-                    </div>
-                </div>
-
-
-                <div className="redes-footer pb-4 ">
-
-                    <div className="degradado-footer">
-
-                        <IconContext.Provider value={{ style: { verticalAlign: 'bottom' }, size: "3rem", className: 'react-icons' }}>
-
-                            <li >
-                                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/hectorimm/" >  <FaInstagram /> </a>
-                            </li>
-
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="https://wa.me/584242235507?text=Hola%20necesito%20informacion">  <FaWhatsapp className="wa" /> </a>
-                            </li>
-                        </IconContext.Provider>
-                    </div>
-                    <div>
-                        <a href="/">
-                            <div className="form-logo"></div>
-                        </a>
-                    </div>
-                </div> */}
-
-
-
-
             </footer>
 
         </>

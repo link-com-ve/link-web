@@ -20,11 +20,11 @@ const HomeScreen = () => {
   const ServicesRef = useRef(null)
   const FooterRef = useRef(null)
 
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  const [amount, setAmount] = useState('')
-  const [projectDescription, setProjectDescription] = useState('')
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [phone, setPhone] = useState()
+  const [amount, setAmount] = useState()
+  const [projectDescription, setProjectDescription] = useState()
 
   const scrollTo = ref => {
     window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" })
@@ -50,7 +50,7 @@ const HomeScreen = () => {
             </Col>
             <Col xl={4}>
               <div className="cont">
-                <Form name={name} setName={setName} email={email} setEmail={setEmail} />
+                <Form name={name} setName={setName} email={email} setEmail={setEmail} scrollTo={scrollTo} FooterRef={FooterRef}/>
                 <Aside />
               </div>
             </Col>

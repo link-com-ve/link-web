@@ -1,8 +1,7 @@
 import React from 'react'
 import "./Form.css"
 
-const Form = ({name, setName, email, setEmail}) => {
-    function handleClick(e) { e.preventDefault(); }
+const Form = ({name, setName, email, setEmail, scrollTo,FooterRef}) => {
     return (
         <div>
             <div id="form">
@@ -11,7 +10,7 @@ const Form = ({name, setName, email, setEmail}) => {
                     <form>
                         <input className="mt-3" type="text" placeholder="Tu Nombre" value={name} onChange={(e) => {setName(e.target.value)}}></input>
                         <input className="mt-3" type="email" placeholder="Tu Email" value={email} onChange={(e) => {setEmail(e.target.value)}}></input>
-                        <input onClick={handleClick} className='mt-3' type="submit" value="Cotizar" />
+                        <input onClick={() => {scrollTo(FooterRef)}} className='mt-3' type="button" value="Cotizar" />
                     </form>
 
                 </div>
