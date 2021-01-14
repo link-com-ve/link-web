@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './index.css';
 import Header from './Components/HeaderComponent/Header'
 import { Row, Col } from 'react-bootstrap'
@@ -9,7 +9,7 @@ import Aside from './Components/AsideComponent/Aside'
 import AboutMe from './Components/AboutMeComponent/AboutMe'
 import Services from './Components/ServicesComponent/Services'
 import Form from "./Components/FormComponent/Form"
-import Footer from "../../Components/FooterComponent/Footer"
+import Footer from "./Components/FooterComponent/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import particleConfig from './Configs/particleConfig'
 
@@ -20,6 +20,11 @@ const HomeScreen = () => {
   const ServicesRef = useRef(null)
   const FooterRef = useRef(null)
 
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [phone, setPhone] = useState()
+  const [amount, setAmount] = useState()
+  const [projectDescription, setProjectDescription] = useState()
 
   const scrollTo = ref => {
     window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" })
@@ -45,7 +50,7 @@ const HomeScreen = () => {
             </Col>
             <Col xl={4}>
               <div className="cont">
-                <Form />
+                <Form name={name} setName={setName} email={email} setEmail={setEmail} scrollTo={scrollTo} FooterRef={FooterRef}/>
                 <Aside />
               </div>
             </Col>
@@ -64,7 +69,18 @@ const HomeScreen = () => {
           </div>
           <div ref={FooterRef}></div>
           <div className="index-2 ">
-            <Footer />
+            <Footer 
+              name={name} 
+              setName={setName} 
+              email={email} 
+              setEmail={setEmail}
+              phone={phone}
+              setPhone={setPhone}
+              amount={amount}
+              setAmount={setAmount}
+              projectDescription={projectDescription}
+              setProjectDescription={setProjectDescription}
+            />
           </div>
         </div>
       </div>
