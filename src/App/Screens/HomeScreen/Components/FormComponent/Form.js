@@ -12,7 +12,6 @@ const Form = ({name, setName, email, setEmail, scrollTo,FooterRef}) => {
                         <input className="mt-3" type="email" placeholder="Tu Email" value={email} onChange={(e) => {setEmail(e.target.value)}}></input>
                         <input onClick={() => {scrollTo(FooterRef)}} className='mt-3' type="button" value="Cotizar" />
                     </form>
-
                 </div>
             </div>
         </div>
