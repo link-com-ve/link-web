@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Form.css"
+import {Form as FormHeader, Input, Button} from 'antd'
 
 const Form = ({name, setName, email, setEmail, scrollTo,FooterRef}) => {
     return (
@@ -7,11 +8,34 @@ const Form = ({name, setName, email, setEmail, scrollTo,FooterRef}) => {
             <div id="form">
                 <div className="contenedor-form" >
                     <h3 >Cotiza tu Proyeccto</h3>
-                    <form>
-                        <input className="mt-3" type="text" placeholder="Tu Nombre" value={name} onChange={(e) => {setName(e.target.value)}}></input>
-                        <input className="mt-3" type="email" placeholder="Tu Email" value={email} onChange={(e) => {setEmail(e.target.value)}}></input>
-                        <input onClick={() => {scrollTo(FooterRef)}} className='mt-3' type="button" value="Cotizar" />
-                    </form>
+
+                    <FormHeader>
+                            <FormHeader.Item className="mt-3">
+                                <Input
+                                    placeholder="Tu Nombre"
+                                    type="text"
+                                    value={name}
+                                    onChange={(e) => {setName(e.target.value)}}
+                                />
+                            </FormHeader.Item>
+
+                            <FormHeader.Item className="mt-3">
+                                <Input
+                                    placeholder="Tu Email"
+                                    type="email"
+                                    value={email}
+                                    onChange={(e) => {setEmail(e.target.value)}}
+                                />
+                            </FormHeader.Item>
+
+                            <FormHeader.Item>
+                                <Button type="button" onClick={() => {scrollTo(FooterRef)}}>
+                                    Cotizar
+                                </Button>
+                            </FormHeader.Item>
+
+                        </FormHeader>
+
                 </div>
             </div>
         </div>
