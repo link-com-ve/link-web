@@ -26,6 +26,7 @@ const HomeScreen = () => {
   const [amount, setAmount] = useState()
   const [projectDescription, setProjectDescription] = useState()
 
+  
   const scrollTo = ref => {
     window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" })
   }

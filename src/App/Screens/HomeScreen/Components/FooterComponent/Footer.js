@@ -2,9 +2,8 @@ import { React } from 'react'
 import "./Footer.css"
 import { IconContext } from "react-icons"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
-import { Form, Input, Button, Select } from 'antd'
+import { Form, Input, Button, notification } from 'antd'
 import sendEmail from '../../../../Helpers/sendEmail'
-const { Option } = Select;
 
 const Footer = ({
     name,
@@ -17,6 +16,22 @@ const Footer = ({
     setAmount,
     projectDescription,
     setProjectDescription }) => {
+
+    const sendEmailAndClean = async (e) => {
+        console.log(e)
+        await sendEmail(e).then(() => {
+            setName("")
+            setEmail("")
+            setPhone("")
+            setAmount("default")
+            setProjectDescription("")
+            notification.info({
+                message: '¡Listo!',
+                description: 'Hemos recibido tu mensaje correctamente.',
+                duration: 10
+              })
+        })
+    }
 
     return (
         <>
@@ -32,8 +47,8 @@ const Footer = ({
                         </div>
                     </div>
                     <div className="form-content-display" >
-                        <Form id="form-footer" onSubmitCapture={sendEmail}>
-                            <Form.Item name="name" rules={[{ required: true, message: '¡Debes ingresar tu nombre!' }]} className="bottom-footer form-select">
+                        <Form id="form-footer" onSubmitCapture={sendEmailAndClean}>
+                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu nombre!' }]} className="bottom-footer form-select">
                                 <Input
                                     placeholder="Tu Nombre"
                                     type="text"
@@ -43,7 +58,7 @@ const Footer = ({
                                 />
                             </Form.Item>
 
-                            <Form.Item name="email" rules={[{ required: true, message: '¡Debes ingresar tu email!' }]} className="bottom-footer form-select">
+                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu email!' }]} className="bottom-footer form-select">
                                 <Input
                                     placeholder="Tu Email"
                                     type="email"
@@ -53,7 +68,7 @@ const Footer = ({
                                 />
                             </Form.Item>
 
-                            <Form.Item name="phone" rules={[{ required: true, message: '¡Debes ingresar tu número!' }]} className="bottom-footer form-select">
+                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu número!' }]} className="bottom-footer form-select">
                                 <Input
                                     placeholder="Tu Número"
                                     type="tel"
@@ -63,22 +78,22 @@ const Footer = ({
                                 />
                             </Form.Item>
 
-                            <Form.Item name="amount" rules={[{ required: true, message: '¡Debes ingresar tu presupuesto!' }]} className="bottom-footer form-select">
-                                <Select
-                                    placeholder="Elige tu presupuesto"
-                                    allowClear
-                                    value={amount}
-                                    name="amount"
-                                    
-                                    onChange={(e) => {setAmount(e)}}
-                                >
-                                    <Option value="250">250$</Option>
-                                    <Option value="500">500$</Option>
-                                    <Option value="1000">1000$ o más</Option>
-                                </Select>
-                            </Form.Item>
+                            <select
+                            name="amount" 
+                            id="amount" 
+                            className="bottom-footer form-select" 
+                            style={{marginBottom: 20}} 
+                            required 
+                            onChange={(e) => {setAmount(e.target.value)}}
+                            defaultValue="default"
+                            value={amount}>
+                                <option disabled value="default">Elige tu presupuesto</option>
+                                <option value="250$">250$</option>
+                                <option value="500$">500$</option>
+                                <option value="1000$ o más">1000$ o más</option>
+                            </select>
 
-                            <Form.Item name="projectDescription">
+                            <Form.Item>
                                 <Input.TextArea
                                     placeholder="Cuéntanos de tu proyecto"
                                     value={projectDescription}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { IconContext, icons } from "react-icons"
+import { IconContext } from "react-icons"
 import { FaClock, FaMoneyBill, FaUserLock } from "react-icons/fa"
 
 
@@ -11,8 +11,6 @@ const AboutMe = () => {
             <IconContext.Provider value={{ style: { verticalAlign: 'bottom', margin: "2rem 0px" }, size: "8rem" }}>
 
                 <div className="dflex ">
-
-
 
                     <div className="colorFondo ">
                         <h3 className="titulos-estilos"> ¿Quienes Somos?</h3>
@@ -30,7 +28,7 @@ const AboutMe = () => {
                     <div className="iconos-nosotros">
                         
                         <div className="icono">
-                            <icons> <FaUserLock /></icons>
+                             <FaUserLock />
                             <h3>Seguridad</h3>
                             <p>Trabajar con células ágiles conformadas por profesionales talentosos y cohesionados, nos permite entregar software de calidad, seguro y escalable de manera rápida y flexible.
 
@@ -38,14 +36,14 @@ const AboutMe = () => {
                         </div>
 
                         <div className="icono">
-                            <icons> <FaMoneyBill /></icons>
+                          <FaMoneyBill />
                             <h3>El Mejor Precio</h3>
                             <p>Los mejores precios para crear la página web de tu negocio.
                         Webs empresariales, tiendas en línea, portales inmobiliarios, tenemos los mejores precios de diseño y desarrollo web.!</p>
                         </div>
 
                         <div className="icono">
-                            <icons> <FaClock /></icons>
+                         <FaClock />
                             <h3>A Tiempo</h3>
                             <p>El tiempo de entrega del diseño y desarrollo de páginas web estará sujeto a la complejidad del proyecto, por lo que este desarrollo lo hacemos bajo presupuesto donde se indicará el tiempo estimado de finalización.</p>
                         </div>
