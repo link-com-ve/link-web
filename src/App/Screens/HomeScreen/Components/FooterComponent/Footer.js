@@ -48,7 +48,7 @@ const Footer = ({
                     </div>
                     <div className="form-content-display" >
                         <Form id="form-footer" onSubmitCapture={sendEmailAndClean}>
-                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu nombre!' }]} className="bottom-footer form-select">
+                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu nombre!' }]} className="form-select">
                                 <Input
                                     placeholder="Tu Nombre"
                                     type="text"
@@ -58,17 +58,18 @@ const Footer = ({
                                 />
                             </Form.Item>
 
-                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu email!' }]} className="bottom-footer form-select">
+                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu email!' }]} className="form-select">
                                 <Input
                                     placeholder="Tu Email"
                                     type="email"
                                     value={email}
                                     name="email"
                                     onChange={(e) => {setEmail(e.target.value)}}
+                                   
                                 />
                             </Form.Item>
 
-                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu número!' }]} className="bottom-footer form-select">
+                            <Form.Item rules={[{ required: true, message: '¡Debes ingresar tu número!' }]} className="form-select">
                                 <Input
                                     placeholder="Tu Número"
                                     type="tel"
@@ -81,7 +82,7 @@ const Footer = ({
                             <select
                             name="amount" 
                             id="amount" 
-                            className="bottom-footer form-select" 
+                            className="form-select" 
                             style={{marginBottom: 20}} 
                             required 
                             onChange={(e) => {setAmount(e.target.value)}}
